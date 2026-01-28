@@ -1,0 +1,124 @@
+prompts
+Do not assign to radiologists for whom order_rvu + radiologist_current_rvu ≥ radiologist_rvu_threshold to facility group 17
+Do not assign to radiologists for whom order_rvu + radiologist_current_rvu ≥ 0.9 × radiologist_rvu_threshold to facility group 17
+Do not assign to radiologists for whom order_rvu + radiologist_credited_rvu ≥ radiologist_rvu_threshold to facility group 17
+Avoid assigning orders to radiologists whose current capacity exceeds 80% of their threshold to facility group 17
+Prefer assigning orders to radiologists whose current RVU is below 30% of their RVU threshold to facility group 17
+Do not assign an order if the order RVU is greater than the radiologist's remaining RVU capacity to facility group 17
+Do not assign new orders if credited RVU is within 5% of the daily limit to facility group 17
+Do not assign orders to radiologists if their current capacity usage is greater than or equal to 75% of their total capacity limit to facility group 17
+Do not assign orders to radiologists whose license has expired to facility group 17
+Assign an order only if the radiologist's remaining capacity is greater than or equal to 3 times the order RVU to facility group 17
+Prefer assigning Head CT studies to radiologists whose current RVU is less than 40% of the daily RVU limit to facility group 17
+Prefer assigning orders to radiologists only if their remaining capacity is greater than or equal to 2 times the order RVU and their current capacity usage is less than 80% of their total capacity to facility group 17
+"Assign an order only if adding the order increases the radiologist’s RVU utilization by less than 10% of their total RVU capacity, and the post-assignment total RVU does not exceed the radiologist’s RVU threshold to facility group 17"
+"Assign an order if it is an Outpatient MR study, the priority is Routine, and the radiologist’s current RVU is below 70% of the daily RVU limit to facility group 17"
+Prefer assigning orders to radiologists who have more than 40% of their total capacity unused and their current RVU utilization is below 60% of their allowed RVU limit to facility group 17
+Do not assign an order if both the radiologist's current capacity usage is greater than or equal to 70% and the radiologist's current RVU is greater than or equal to 70% of the daily RVU limit to facility group 17
+"Assign CT orders only if the order modality is CT, the radiologist's current RVU is less than 50% of the daily RVU limit, and the radiologist's current capacity usage is less than 80% to facility group 17"
+Prefer assigning elderly patient (age > 60) cases to radiologists whose current RVU does not exceed 50% of their RVU threshold to facility group 17
+Assign an order only if the radiologist's remaining capacity is greater than 3 times the order RVU and the radiologist's credited RVU is less than 90% of the daily RVU limit to facility group 17
+Do not assign an order if the radiologist's credited RVU is greater than half of the radiologist's remaining capacity to facility group 17
+Assign an order only if the radiologist's RVU after assignment is less than the daily RVU limit and the radiologist's current capacity usage is less than 80% to facility group 17
+Assign an order to a radiologist if either the radiologist's current RVU is less than 40% of the daily RVU limit or the radiologist has more than 30% remaining capacity to facility group 17
+"Assign an order if the patient gender is female, the radiologist facility matches the order facility, and either the radiologist's current capacity usage is less than 60% or the radiologist's current RVU is less than 50% of the daily RVU limit to facility group 17"
+"Assign female-patient orders only if the patient gender is female, the radiologist facility matches the order facility, and the sum of the radiologist's current capacity and current RVU is less than 90% of the radiologist's daily RVU limit to facility group 17"
+Assign an order if either the radiologist has more than 50% of their daily RVU limit remaining or the radiologist has more than 45% remaining capacity to facility group 17
+"Assign an order only if the radiologist's RVU after assignment is less than 80% of the daily RVU limit, the radiologist's capacity usage after assignment is less than 85%, and the radiologist's credited RVU is less than 90% of the daily RVU limit to facility group 17"
+Assign Routine MRI orders for patients older than 65 years only if the radiologist's current RVU is less than 50% of the daily RVU limit and the radiologist's remaining capacity is greater than the patient age divided by 100 multiplied by the daily RVU limit to facility group 17
+Assign Routine CT or MRI orders for patients younger than 30 years or older than 65 years only if the radiologist's RVU after assignment is less than 70% of the daily RVU limit to facility group 17
+"Assign STAT CT orders to neuroradiologists when the CPT code to facility group 17.
+
+Confirmation Yes"
+"Assign Chest X-ray to radiologists licensed in state of Ohio to facility group 17.
+Confirmation Yes"
+"Assign STAT Chest scanning to neuroradiologists to facility group 17.
+Confirmation Yes"
+"Assign CT Abdomen and Pelvis to radiologists to facility group 17.
+Confirmation Yes"
+"Assign breast cancer cases to juniorrad to facility group 17.
+Confirmation Yes"
+"Assign breast scanning cases to juniorrad to facility group 17.
+Confirmation Yes"
+"Send mammography orders to mammorad to facility group 17.
+Confirmation Yes"
+"Assign CT Head and Neck cases to neurorad to facility group 17.
+Confirmation Yes"
+"Assign CTA Head and Neck cases to neurorad to facility group 17.
+Confirmation Yes"
+"Assign CT Abdomen and Pelvis (CPT 74177) to general radiologists during daytime to facility group 17.
+Confirmation Yes"
+"Assign CT Abdomen and Pelvis (CPT 74177) to general radiologists to facility group 17.
+Confirmation Yes"
+"Assign Breast MRI to mammography specialists only to facility group 17.
+Confirmation Yes"
+"Route mammogram orders for female patients older than 60 years to mammorad to facility group 17.
+Confirmation Yes"
+"Route head CT orders to neurorad to facility group 17.
+Confirmation Yes"
+"Send brain MR scans to neurorad to facility group 17.
+Confirmation Yes"
+"Direct chest X-ray orders to radexperts to facility group 17.
+Confirmation Yes"
+"Map abdominal CT orders to ctrad to facility group 17, facility 2, title testradddct.
+Confirmation Yes"
+"Forward pelvic CT scans to ctrad to facility group 17, facility 2, priority 7, title test233.
+Confirmation Yes"
+"Handle spine MR orders through mskrad to facility group 17.
+Confirmation Yes"
+"Allocate knee X-ray orders to orthorad to facility group 17.
+Confirmation Yes"
+"Handle spine MR orders through mskradd to facility group 17.
+Confirmation Yes"
+"Route breast mammogram orders to mammorad to facility group 17.
+Confirmation Yes"
+"Send cardiac CT studies to cardiorad to facility group 17.
+Confirmation Yes"
+Assign emergency cases from physician Fevwozohjim Abeq to radiologist Radiologistdevnew 1 to facility group 17.
+Route mammogram studies from physician Sajuhud Abik to att_rad (attrad) radiologist group to facility group 17.
+Orders from physician Komip Abzid should always be assigned to DevRad1 DevRad1 to facility group 17.
+Send all CT Chest orders from physician Edyegem Abvon to Local FRad1 to facility group 17.
+Do not assign orders from physician Loteg Abon to radiologist gn_rad to facility group 17.
+Orders from physician Ivtuhad Absed should not be served by dilip1 to facility group 17.
+Block assignment for physician Axosyok Achid if no radiologist with matching modality is available to facility group 17.
+Reject MRI orders from physician Aqog Acem when requested for a non-matching radiologist group to facility group 17.
+Route CT Spine studies from physician Fevwozohjim Abeq to radiologist Radiologistdevnew 1 to facility group 17.
+High-priority orders from physician Sajuhud Abik must go to radiologist att_rad to facility group 17.
+Send abdominal CT orders from physician Komip Abzid to radiologist DevRad1 DevRad1 to facility group 17.
+"If physician Eylok Acfetsot submits a STAT MRI order, assign only to Xavier de Frutos; otherwise reject to facility group 17."
+"If physician Rilorakeh Acgofas places an order with missing modality, return “Invalid Modality” to facility group 17."
+Send Head CT order to the technologist AlgoUserLN113 AlgoUserFN78928 to facility group 17.
+Assign head CT orders to neurorad when the radiologist is joe smith to facility group 17.
+Route chest X-ray orders to radexperts reviewed by Dr. Meera Iyer to facility group 17.
+Send spine MRI orders to mskrad handled by st.joshaph cookk to facility group 17.
+Assign abdominal CT orders to ctrad when the technician is aderson smith to facility group 17.
+Route pelvic CT scans to ctrad performed by technician poul walkar to facility group 17.
+Send breast mammogram orders to mammorad read by Dr. smitha Nair to facility group 17.
+Assign knee X-ray orders to orthorad when referred by Dr. been piterson to facility group 17.
+Route shoulder MRI scans to mskrad if the referring physician is eram padric to facility group 17
+Assign emergency cases from physician Fevwozohjim Abeq to radiologist Radiologistdevnew 1 to facility group 10.
+Route mammogram studies from physician Sajuhud Abik to att_rad (attrad) radiologist group to facility group 10.
+Orders from physician Komip Abzid should always be assigned to DevRad1 DevRad1 to facility group 10.
+Send all CT Chest orders from physician Edyegem Abvon to Local FRad1 to facility group 10.
+Do not assign orders from physician Loteg Abon to radiologist gn_rad to facility group 10.
+Orders from physician Ivtuhad Absed should not be served by dilip1 to facility group 10.
+Block assignment for physician Axosyok Achid if no radiologist with matching modality is available to facility group 10.
+Reject MRI orders from physician Aqog Acem when requested for a non-matching radiologist group to facility group 10.
+Route CT Spine studies from physician Fevwozohjim Abeq to radiologist Radiologistdevnew 1 to facility group 10.
+High-priority orders from physician Sajuhud Abik must go to radiologist att_rad to facility group 10.
+Send abdominal CT orders from physician Komip Abzid to radiologist DevRad1 DevRad1 to facility group 10.
+"If physician Eylok Acfetsot submits a STAT MRI order, assign only to Xavier de Frutos; otherwise reject to facility group 10."
+"If physician Rilorakeh Acgofas places an order with missing modality, return “Invalid Modality” to facility group 10."
+Send Head CT order to the technologist AlgoUserLN113 AlgoUserFN78928 to facility group 10.
+Assign head CT orders to neurorad when the radiologist is joe smith to facility group 10.
+Route chest X-ray orders to radexperts reviewed by Dr. Meera Iyer to facility group 10.
+Send spine MRI orders to mskrad handled by st.joshaph cookk to facility group 10.
+Assign abdominal CT orders to ctrad when the technician is aderson smith to facility group 10.
+Route pelvic CT scans to ctrad performed by technician poul walkar to facility group 10.
+Send breast mammogram orders to mammorad read by Dr. smitha Nair to facility group 10.
+Assign knee X-ray orders to orthorad when referred by Dr. been piterson to facility group 10.
+Route shoulder MRI scans to mskrad if the referring physician is eram padric to facility group 10
+Route pelvic CT scans to ctrad performed by technician poul walkar to facility group 53
+Send breast mammogram orders to mammorad read by Dr. smitha Nair to facility group 55.
+Assign knee X-ray orders to orthorad when referred by Dr. been piterson to facility group 55.
+Route shoulder MRI scans to mskrad if the referring physician is eram padric to facility group 66
