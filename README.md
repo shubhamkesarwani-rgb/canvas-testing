@@ -7,11 +7,7 @@ Complete framework for testing how your Rule Processor Agent handles concurrent 
 **Brand new?** Ultra-quick guide: **[TESTING_QUICKSTART.md](TESTING_QUICKSTART.md)** ⚡  
 Just want to run the test? This is for you!
 
-**Need full instructions?** Complete guide: **[TESTER_INSTRUCTIONS.md](TESTER_INSTRUCTIONS.md)** 📖  
-Step-by-step guide with detailed explanations.
 
-**Already familiar?** Quick reference: **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** 📋  
-One-page cheat sheet for quick testing.
 
 ## 📚 Documentation
 
@@ -21,42 +17,7 @@ One-page cheat sheet for quick testing.
   - Two commands: navigate + run
   - Perfect for first-time users
   
-- **[TESTER_INSTRUCTIONS.md](TESTER_INSTRUCTIONS.md)** - Complete testing guide
-  - How to run tests using quick_test.sh
-  - How to change concurrent requests
-  - Detailed results interpretation
-  - Troubleshooting
-  
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick reference card
-  - Commands at a glance
-  - Metrics interpretation
-  - Troubleshooting table
 
-### For Technical Users
-- **[ITERATIONS_GUIDE.md](ITERATIONS_GUIDE.md)** ⭐ NEW! - Sustained load with iterations
-  - What iterations are and why use them
-  - Detecting performance degradation
-  - Finding memory leaks
-  - Example configurations
-  
-- **[CONCURRENT_LOAD_TEST_GUIDE.md](CONCURRENT_LOAD_TEST_GUIDE.md)** - Technical deep dive
-  - How concurrent testing works
-  - Threading vs multiprocessing
-  - System behavior analysis
-  
-- **[20_USER_CONCURRENCY_TEST.md](20_USER_CONCURRENCY_TEST.md)** - 20-user test guide
-  - Specific guidance for 20 concurrent users
-  - Performance targets
-  - Troubleshooting scenarios
-
-- **[LOAD_TEST_README.md](LOAD_TEST_README.md)** - Original framework docs
-  - Complete feature list
-  - Advanced configuration
-  - Architecture details
-
-### Technical References
-- **[FIX_SUMMARY.md](FIX_SUMMARY.md)** - Import issue fix documentation
-- **[TESTING_SETUP_SUMMARY.md](TESTING_SETUP_SUMMARY.md)** - Setup guide
 
 ## 📁 Files
 
@@ -135,13 +96,7 @@ Use command line arguments:
 ./quick_test.sh 10 10    # Sustained: 100 requests in 10 waves
 ```
 
-### Advanced Configuration
-Edit defaults in `load_test_wrapper.py` or use Python directly:
 
-```bash
-python load_test_wrapper.py --workers 20 --iterations 3
-python load_test_wrapper.py -w 10 -i 5
-python load_test_wrapper.py --help  # See all options
 ```
 
 **See [ITERATIONS_GUIDE.md](ITERATIONS_GUIDE.md) for detailed information**
@@ -196,31 +151,6 @@ All results saved in `load_test_results/`:
 ================================================================================
 ```
 
-## 🛠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Module not found | `pip install -r load_test_requirements.txt` |
-| CSV file not found | Ensure you're in correct directory |
-| All requests fail | Check network/API status |
-| High latency | Reduce concurrent requests |
-
-## 📖 Where to Start
-
-1. **New testers**: Read [TESTING_QUICKSTART.md](TESTING_QUICKSTART.md) ⚡
-2. **Run test**: Execute `./quick_test.sh`
-3. **Need details**: Read [TESTER_INSTRUCTIONS.md](TESTER_INSTRUCTIONS.md)
-4. **Quick lookup**: Use [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-5. **Technical deep dive**: Read [CONCURRENT_LOAD_TEST_GUIDE.md](CONCURRENT_LOAD_TEST_GUIDE.md)
-
-## 💡 Testing Strategy
-
-### Progressive Testing
-1. **Start small**: Test with 5 concurrent requests
-2. **Increase gradually**: 10, then 20, then 30
-3. **Find sweet spot**: Where performance is good
-4. **Find breaking point**: Where it starts failing
-5. **Document findings**: Record optimal concurrency
 
 ### Recommended Flow
 ```
