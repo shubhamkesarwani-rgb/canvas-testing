@@ -4,7 +4,7 @@
 
 ### Step 1: Open Terminal
 ```bash
-cd /Users/shubhamkesarwani/projects/concurrency_testing
+cd /Users/shubhamkesarwani/projects/canvas_testing
 ```
 
 ### Step 2: Run the Test
